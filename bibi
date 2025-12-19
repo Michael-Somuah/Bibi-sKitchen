@@ -1,0 +1,2082 @@
+/* PAGE HERO */
+.page-hero {
+    background: #1d7d4fed;
+    color: rgb(222, 213, 200);
+    padding: 60px 7%;
+    text-align: center;
+    border-radius: 0 0 20px 20px;
+}
+
+.page-hero h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+/* SERVICE SECTION */
+.service-section {
+    padding: 60px 7%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.service-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: rgba(0,0,0,0.08) 0px 2px 6px;
+    text-align: center;
+    transition: .3s;
+}
+
+.service-card h2 {
+    margin-bottom: 10px;
+    color: #1d7d4f;
+}
+
+.service-card p {
+    font-size: 15px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+}
+
+/* BUTTON FIXES */
+.active {
+    color: #1d7d4f;
+    font-weight: 700;
+}
+.form-box {
+    width: 60%;
+    margin: 30px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: rgba(0,0,0,0.1) 0 4px 10px;
+}
+
+.form-box label {
+    font-weight: 600;
+    margin-top: 15px;
+    display: block;
+}
+
+.form-box input,
+.form-box select,
+.form-box textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+.btn-primary {
+    background: #1d7d4f;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.koose{
+    background-image: url("images/rest.jpg");
+}
+/* ========================= RESET ========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+/* ========================= BODY ========================= */
+body {
+    line-height: 1.6;
+    color: #333;
+    background: #fdfdfd;
+}
+
+/* ========================= HEADER ========================= */
+header {
+    background: #fff;
+    padding: 15px 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+header .logo {
+    width: 180px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* ========================= NAVIGATION ========================= */
+nav {
+    background: #ff5e00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    flex-wrap: wrap;
+    gap: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.nav_board{
+    background: #e65300;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    color: #fffefb;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+    background: #fff;
+    color: #f36411;
+}
+
+
+/* ========================= HERO SECTION ========================= */
+.hero {
+    position: relative;
+    background: url('hero-food.jpg') center/cover no-repeat;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+
+.hero-text {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+    padding: 0 20px;
+}
+
+.hero-text h2 {
+    font-size: clamp(28px, 5vw, 50px);
+    margin-bottom: 15px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.hero-text h2 span {
+    color: #ffcc00;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.button {
+    background: #ff5e00;
+    color: #fff;
+    padding: 12px 30px;
+    font-size: 18px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background: #e65300;
+    transform: translateY(-2px);
+}
+
+/* ========================= ABOUT SECTION ========================= */
+.home-about {
+    padding: 80px 20px;
+    text-align: center;
+    background: #fafafa;
+}
+
+.home-about h3 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #ff5e00;
+    font-weight: 700;
+}
+
+.home-about p {
+    max-width: 750px;
+    margin: 0 auto 25px;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #555;
+}
+
+.learn-more {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background: #ff5e00;
+    padding: 12px 25px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.learn-more:hover {
+    background: #e65300;
+    transform: translateY(-2px);
+}
+
+/* ========================= FOOTER ========================= */
+footer {
+    background: hsla(19, 100%, 50%, 0.918);
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #ff5e00;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: #ffcc00;
+}
+
+/* ========================= RESPONSIVE ========================= */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero-text h2 {
+        font-size: 32px;
+    }
+
+    .hero-text p,
+    .home-about p {
+        font-size: 16px;
+    }
+
+    .home-about h3 {
+        font-size: 28px;
+    }
+}
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #f8f8f8;
+}
+
+/* NAV */
+nav {
+    background: #ff5e00;
+    padding: 15px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 0;
+    margin: 0;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* MAIN CARD */
+.food-wrapper {
+    max-width: 1000px;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    display: flex;
+    gap: 40px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* IMAGE */
+.food-image img {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* DETAILS */
+.food-details h2 {
+    color: #ff5e00;
+    margin-top: 0;
+}
+
+.food-details p {
+    color: #555;
+}
+
+/* OPTIONS */
+.option {
+    margin-top: 18px;
+}
+
+.option label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.option-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* KFC ICON STYLE */
+.option-preview {
+    
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+/* INPUTS */
+select, input[type="number"] {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* BUTTON */
+.order-btn {
+    margin-top: 25px;
+    width: 100%;
+    padding: 14px;
+    background: #ff5e00;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.order-btn:hover {
+    background: #e65300;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px) {
+    .food-wrapper {
+        flex-direction: column;
+    }
+}
+ body {
+            font-family: 'Poppins', Arial, Helvetica, sans-serif;
+            background: #fdf6f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* ========================= NAVIGATION ========================= */
+        nav {
+            background: #ff5e00;
+            padding: 15px 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin: 0;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background: #fff;
+            color: #ff5e00;
+        }
+
+        /* ========================= ABOUT SECTION ========================= */
+        .about-section {
+            max-width: 1000px;
+            margin: 80px auto;
+            background: #fff;
+            padding: 50px 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            line-height: 1.8;
+        }
+
+        .about-section h2 {
+            text-align: center;
+            color: #ff5e00;
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        .about-section h3 {
+            color: #ff5e00;
+            font-size: 24px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        .about-section p {
+            color: #555;
+            font-size: 17px;
+            margin-bottom: 15px;
+        }
+
+        .about-section ul {
+            margin: 10px 0;
+            padding-left: 20px;
+            color: #555;
+        }
+
+        .about-section ul li {
+            margin-bottom: 10px;
+        }
+
+        /* ========================= RESPONSIVE ========================= */
+        @media (max-width: 768px) {
+            .about-section {
+                padding: 30px 20px;
+            }
+
+            .about-section h2 {
+                font-size: 28px;
+            }
+
+            .about-section h3 {
+                font-size: 20px;
+            }
+
+            .about-section p,
+            .about-section ul li {
+                font-size: 16px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+        /* ================= RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+/* ================= BODY ================= */
+body {
+    background: #fdf6f0;
+    color: #333;
+    min-height: 100vh;
+}
+
+/* ================= PAGE TITLE ================= */
+h1 {
+    text-align: center;
+    margin: 50px 0 20px;
+    color: #ff5e00;
+    font-size: 36px;
+}
+
+/* ================= FORM BOX ================= */
+.form-box {
+    width: 60%;
+    max-width: 600px;
+    margin: 0 auto 60px;
+    background: #ffffff;
+    padding: 35px 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* ================= FORM LABELS ================= */
+.form-box label {
+    display: block;
+    margin-top: 18px;
+    margin-bottom: 6px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+/* ================= INPUTS ================= */
+.form-box input,
+.form-box select,
+.form-box textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.form-box input:focus,
+.form-box select:focus,
+.form-box textarea:focus {
+    border-color: #ff5e00;
+}
+
+/* ================= TEXTAREA ================= */
+.form-box textarea {
+    resize: vertical;
+}
+
+/* ================= BUTTON ================= */
+.btn-primary {
+    width: 100%;
+    margin-top: 25px;
+    padding: 14px;
+    background: #ff5e00;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #e65300;
+    transform: translateY(-2px);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+    .form-box {
+        width: 90%;
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+}
+/* ================= RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+/* ================= BODY ================= */
+body {
+    background: #fdf6f0;
+    color: #333;
+    min-height: 100vh;
+}
+
+/* ================= PAGE TITLE ================= */
+h1 {
+    text-align: center;
+    margin: 50px 0 25px;
+    color: #ff5e00;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+/* ================= FORM CONTAINER ================= */
+.form-box {
+    width: 60%;
+    max-width: 600px;
+    margin: 0 auto 70px;
+    background: #ffffff;
+    padding: 35px 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* ================= LABELS ================= */
+.form-box label {
+    display: block;
+    margin-top: 18px;
+    margin-bottom: 6px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+/* ================= INPUTS & SELECT ================= */
+.form-box input,
+.form-box select,
+.form-box textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+/* Focus effect */
+.form-box input:focus,
+.form-box select:focus,
+.form-box textarea:focus {
+    border-color: #ff5e00;
+}
+
+/* ================= TEXTAREA ================= */
+.form-box textarea {
+    resize: vertical;
+}
+
+/* ================= BUTTON ================= */
+.btn-primary {
+    width: 100%;
+    margin-top: 25px;
+    padding: 14px;
+    background: #ff5e00;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #e65300;
+    transform: translateY(-2px);
+}
+
+
+        body { font-family: Arial, sans-serif; background: #f8f8f8; margin: 0; padding: 0; }
+nav { background: #333; padding: 12px 0; text-align: center; }
+nav ul { list-style: none; margin: 0; padding: 0; }
+nav ul li { display: inline-block; margin: 0 15px; }
+nav ul li a { color: white; text-decoration: none; font-size: 16px; }
+nav ul li .btn { background: orange; padding: 6px 12px; border-radius: 5px; }
+nav ul li .btn:hover { background: darkorange; }
+.menu-section { max-width: 1000px; margin: 50px auto; padding: 20px; }
+.menu-section h2 { text-align: center; color: #333; margin-bottom: 40px; }
+.category { margin-bottom: 50px; }
+.category h3 { color: orange; margin-bottom: 20px; border-bottom: 2px solid orange; display: inline-block; padding-bottom: 5px; }
+.menu-cards { display: flex; flex-wrap: wrap; gap: 25px; justify-content: center; }
+.menu-card { background: white; border-radius: 10px; width: 220px; box-shadow: 0 0 10px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.3s; }
+.menu-card:hover { transform: scale(1.05); }
+.menu-card img { width: 100%; height: 300px; object-fit: cover; }
+.menu-card-content { padding: 15px; text-align: center; }
+.menu-card-content h4 { color: #333; margin: 10px 0; font-size: 18px; }
+.menu-card-content p { color: #555; font-size: 14px; margin: 5px 0; }
+.menu-card-content .price { color: #333; font-weight: bold; margin-top: 10px; }
+.menu-card-content .order-btn { margin-top: 10px; padding: 8px 15px; background: orange; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 14px; transition: 0.3s; }
+.menu-card-content .order-btn:hover { background: darkorange; }
+/* Responsive */
+@media(max-width: 768px){ .menu-cards { flex-direction: column; align-items: center; } }
+.logo img.logo-img {
+    height: 60px;   /* Adjust the size as needed */
+    display: block;
+    margin: 0 auto;
+}
+/* Logo styling */
+nav .logo {
+    max-width: 150px;   /* Adjust size */
+    height: auto;       /* Keep aspect ratio */
+    margin-right: 20px; /* Space between logo and menu */
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Make nav items inline with logo */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Or flex-start if you want logo left-aligned */
+    gap: 20px;
+    padding: 10px 20px;
+    background: rgb(255, 123, 0);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* Small logo for navbar */
+.logo-small {
+    width: 120px;
+    height: auto;
+    display: block;
+    margin-right: 15px;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Venue Booking - Bibi's Kitchen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="header-container">
+            <img src="images/bibi's kitchen logo.png" alt="Bibi's Kitchen Logo" class="logo">
+        </div>
+    </header>
+
+
+<!-- Navigation -->
+<nav>
+    <img src="images/bibi's kitchen logo.png" alt="Bibi's Kitchen Logo" class="logo-small">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<h1>Book Our Event Venue</h1>
+
+<form class="form-box whatsapp-form">
+    <label>Full Name:</label>
+    <input type="text" name="fullName" required>
+
+    <label>Phone Number:</label>
+    <input type="text" name="phone" required>
+
+    <label>Email:</label>
+    <input type="email" name="email" required>
+
+    <label>Event Type:</label>
+    <select name="eventType">
+        <option>Wedding</option>
+        <option>Birthday Party</option>
+        <option>Corporate Event</option>
+        <option>Private Event</option>
+    </select>
+
+    <label>Event Date:</label>
+    <input type="date" name="eventDate" required>
+
+    <label>Number of Guests:</label>
+    <input type="number" name="guests" min="10" required>
+
+    <label>Additional Notes:</label>
+    <textarea name="notes" rows="4"></textarea>
+
+       <a 
+  href="https://wa.me/233248854776?text=Hello i'm....." 
+  target="_blank" 
+  class="btn-primary"
+>
+  Submit Catering Request
+</a>
+
+</form>
+<footer class="footer">
+        <p>© 2025 Bibi’s Kitchen | All Rights Reserved</p>
+</footer>
+
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - BIBI'S KITCHEN</title>
+    <link rel="stylesheet" href="style.css">
+ 
+
+       
+</head>
+<body>
+<!-- HEADER -->
+    <header>
+        <div class="header-container">
+            <img src="images/bibi's kitchen logo.png" alt="Bibi's Kitchen Logo" class="logo">
+        </div>
+    </header>
+
+<!-- Navigation -->
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- About Content -->
+<div class="about-section">
+    <h2>About Us</h2>
+
+    <p>
+        Welcome to <strong>BIBI'S KITCHEN</strong>! We are dedicated to providing a seamless and enjoyable dining experience for our customers. 
+        Our restaurant booking system ensures that reserving a table is fast, simple, and reliable.
+    </p>
+
+    <h3>Our Goal</h3>
+    <p>
+        To help restaurants manage reservations efficiently, reduce wait times, and enhance customer satisfaction. 
+        We offer real-time availability, secure access, and a user-friendly interface for a smooth booking process.
+    </p>
+
+    <h3>Why Choose Us</h3>
+    <ul>
+        <li>Fast and easy table reservations</li>
+        <li>Real-time booking updates</li>
+        <li>Reliable and secure system</li>
+        <li>User-friendly interface for both customers and staff</li>
+        <li>Improves restaurant efficiency and customer service</li>
+    </ul>
+</div>
+<footer class="footer">
+        <p>© 2025 Bibi’s Kitchen | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catering Booking - Bibi's Kitchen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- HEADER -->
+    <header>
+        <div class="header-container">
+            <img src="images/bibi's kitchen logo.png" alt="Bibi's Kitchen Logo" class="logo">
+        </div>
+    </header>
+
+<nav>
+    <img src="images/bibi's kitchen logo.png" alt="Bibi's Kitchen Logo" class="logo" style="width:120px;">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<h1>Book Catering Service</h1>
+
+<form id="cateringForm" class="form-box">
+
+    <label for="full_name">Full Name:</label>
+    <input type="text" id="full_name" name="Full_Name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="Email" required>
+
+    <label for="phone">Phone Number:</label>
+    <input type="text" id="phone" name="Phone_Number" required>
+
+    <label for="event_type">Event Type:</label>
+    <select id="event_type" name="Event_Type">
+        <option>Wedding</option>
+        <option>Birthday Party</option>
+        <option>Corporate Event</option>
+        <option>Funeral</option>
+        <option>Private Event</option>
+    </select>
+
+    <label for="event_date">Event Date:</label>
+    <input type="date" id="event_date" name="Event_Date" required>
+
+    <label for="guests">Expected Guests:</label>
+    <input type="number" id="guests" name="Expected_Guests" min="10" required>
+
+    <label for="notes">Additional Notes:</label>
+    <textarea id="notes" name="Additional_Notes" rows="4"></textarea>
+
+   <a 
+  href="https://wa.me/233248854776?text=Hello i'm ....!" 
+  target="_blank" 
+  class="btn-primary"
+>
+  Submit Catering Request
+</a>
+
+</form>
+
+
+<script src="java.js"></script>
+<footer class="footer">
+        <p>© 2025 Bibi’s Kitchen | All Rights Reserved</p>
+</footer>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Private Chef Booking - Bibi's Kitchen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- HEADER -->
+    <header>
+        <div class="header-container">
+            <img src="images/bibi's kitchen logo.png" alt="Bibi's Kitchen Logo" class="logo">
+        </div>
+    </header>
+
+<nav>
+    <img src="images/bibi's kitchen logo.png" alt="Bibi's Kitchen Logo" class="logo">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<h1>Request a Private Chef</h1>
+
+<form class="form-box whatsapp-form">
+    <label>Your Name:</label>
+    <input type="text" name="Full Name" required>
+
+    <label>Your Phone:</label>
+    <input type="text" name="Phone Number" required>
+
+    <label>Date Needed:</label>
+    <input type="date" name="Service Date" required>
+
+    <label>Service Duration:</label>
+    <select name="Service Duration">
+        <option>2 Hours</option>
+        <option>4 Hours</option>
+        <option>Full Day</option>
+    </select>
+
+    <label>Menu Preference:</label>
+    <textarea name="Menu Preference" rows="3"></textarea>
+
+     <a 
+  href="https://wa.me/233248854776?text=Hello i'm........" 
+  target="_blank" 
+  class="btn-primary"
+>
+  Submit Catering Request
+</a>
+
+</form>
+<footer class="footer">
+        <p>© 2025 Bibi’s Kitchen | All Rights Reserved</p>
+</footer>
+
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Restaurant Booking</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+    /* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+    .form-box {
+        width: 90%;
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+}
+  body {
+            font-family: Arial, sans-serif;
+            background: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background: #333;
+            padding: 12px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        nav ul li .btn {
+            background: orange;
+            padding: 6px 12px;
+            border-radius: 5px;
+        }
+
+        nav ul li .btn:hover {
+            background: darkorange;
+        }
+
+        .contact-section {
+            max-width: 800px;
+            margin: 50px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .contact-section p {
+            margin-bottom: 25px;
+            color: #555;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin: 15px;
+            font-size: 48px;
+            transition: 0.3s;
+        }
+
+        /* Brand Colors */
+        .whatsapp { color: #25D366; }
+        .snapchat { color: #FFFC00; }
+        .facebook { color: #1877F2; }
+        .instagram { color: #C13584; }
+        .email { color: #EA4335; }
+
+        /* Hover Effect: slightly darker */
+        .social-links a:hover { opacity: 0.8; }
+
+        .social-links p {
+            font-size: 14px;
+            margin-top: 5px;
+            color: #333;
+        }
+
+        .social-links div {
+            display: inline-block;
+            text-align: center;
+        }
+</style>
+    
+</head>
+<body>
+<!-- HEADER -->
+    <header>
+        <div class="header-container">
+            <img src="images/bibi's kitchen logo.png" alt="Bibi's Kitchen Logo" class="logo">
+        </div>
+    </header>
+
+
+    <!-- NAVIGATION BAR -->
+    <nav class="nav_board">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+  
+        </ul>
+    </nav>
+
+
+<!-- Contact Section -->
+<div class="contact-section">
+    <h2>Contact Us</h2>
+    <p>Connect with us on social media or send us an email directly.</p>
+
+    <div class="social-links">
+        <div>
+            <a href="https://wa.me/233248854776" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+            <p>WhatsApp</p>
+        </div>
+        <div>
+            <a href="https://www.snapchat.com/add/michaelsomuah23" target="_blank" class="snapchat"><i class="fab fa-snapchat"></i></a>
+            <p>Snapchat</p>
+        </div>
+        <div>
+            <a href="https://www.facebook.com/yourpage" target="_blank" class="facebook"><i class="fab fa-facebook"></i></a>
+            <p>Facebook</p>
+        </div>
+        <div>
+            <a href="https://www.instagram.com/bibi.skitchengh" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+            <p>Instagram</p>
+        </div>
+        <div>
+            <a href="michaelsomuah20@gmail.com" target="_blank" class="email"><i class="fas fa-envelope"></i></a>
+            <p>Email</p>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+        <p>© 2025 Bibi’s Kitchen | All Rights Reserved</p>
+</footer>
+
+
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Order | BIBI'S KITCHEN</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- HEADER -->
+    <header>
+        <div class="header-container">
+            <img src="images/bibi's kitchen logo.png" alt="Bibi's Kitchen Logo" class="logo">
+        </div>
+    </header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="food-wrapper">
+
+    <!-- LEFT IMAGE -->
+    <div class="food-image">
+        <img id="food-image" src="images/placeholder.png" alt="Food Image">
+    </div>
+
+    <!-- RIGHT DETAILS -->
+    <div class="food-details">
+        <h2 id="food-name">Food Name</h2>
+        <p id="food-description">Food description goes here.</p>
+
+        <!-- SIZE -->
+        <div class="option">
+            <label>Select Size</label>
+            <div class="option-row">
+                <select id="size"></select>
+                <img id="size-preview" class="option-preview" src="images/placeholder.png">
+            </div>
+        </div>
+
+        <!-- SIDES -->
+        <div class="option">
+            <label>Choose Side</label>
+            <div class="option-row">
+                <select id="sides"></select>
+                <img id="side-preview" class="option-preview" src="images/placeholder.png">
+            </div>
+        </div>
+
+        <!-- DRINK -->
+        <div class="option">
+            <label>Add Drink</label>
+            <div class="option-row">
+                <select id="drinks"></select>
+                <img id="drink-preview" class="option-preview" src="images/placeholder.png">
+            </div>
+        </div>
+
+        <!-- QUANTITY -->
+        <div class="option">
+            <label>Quantity</label>
+            <input type="number" id="quantity" value="1" min="1">
+        </div>
+
+        <button class="order-btn" onclick="goToWhatsApp()">
+  Order on WhatsApp
+</button>
+
+    </div>
+
+</div>
+
+<script src="java.js"></script>
+<footer class="footer">
+        <p>© 2025 Bibi’s Kitchen | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIBI'S KITCHEN</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="header-container">
+            <img src="images/bibi's kitchen logo.png" alt="Bibi's Kitchen Logo" class="logo">
+        </div>
+    </header>
+
+    <!-- NAVIGATION BAR -->
+    <nav >
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+  
+        </ul>
+    </nav>
+
+    <!-- HERO SECTION -->
+     <div class="koose">
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Welcome to <span>BIBI'S KITCHEN</span></h2>
+            <p>
+                Your home for delicious meals, catering services, private chefs,
+                and beautiful event setups for weddings, parties, and conferences.
+            </p>
+            <a class="button" href="services.html">Quick Order</a>
+        </div>
+    </section>
+</div>
+    <!-- ABOUT PREVIEW -->
+    <section class="home-about">
+        <div class="about-content">
+            <h3>Your Favourite Food Spot</h3>
+            <p>
+                We serve fresh, flavorful dishes made with the finest ingredients.
+                Whether you're dining in, ordering online, or booking us for an event,
+                Bibi’s Kitchen guarantees satisfaction.
+            </p>
+            <a href="about.html" class="learn-more">Learn More</a>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>© 2025 Bibi’s Kitchen | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
+
+/*********************************
+ GET FOOD FROM URL
+**********************************/
+const params = new URLSearchParams(window.location.search);
+let foodName = params.get("food") || "Jollof Rice";
+
+/*********************************
+ FOOD NAME FIX
+**********************************/
+const foodKeyMap = {
+  jollof: "Jollof Rice",
+  waakye: "Waakye",
+  banku: "Banku",
+  fufu: "Fufu with Light Soup",
+  pizza: "Pizza",
+  burger: "Burger",
+  wings: "Chicken Wings",
+  shawarma: "Shawarma",
+  cake: "Cake",
+  donut: "Donuts",
+  donuts: "Donuts",
+  "icecream": "Ice Cream",
+  "ice cream": "Ice Cream",
+  juice: "juice",
+  milkshake: "Milkshake"
+};
+
+foodName = foodKeyMap[foodName.toLowerCase()] || foodName;
+
+document.getElementById("food-name").textContent = foodName;
+
+/*********************************
+ NORMALIZER
+**********************************/
+function normalize(text) {
+  return text.toLowerCase().replace(/\s+/g, "_");
+}
+
+/*********************************
+ FOOD MAIN IMAGE
+**********************************/
+const foodImages = {
+  "Jollof Rice": "images/jollof.jpg",
+  "Waakye": "images/wakye.jpg",
+  "Banku": "images/banku.jpg",
+  "Fufu with Light Soup": "images/fufu (2).jpg",
+  "Pizza": "images/pizza.jpg",
+  "Burger": "images/burger.jpg",
+  "Chicken Wings": "images/wings.jpg",
+  "Shawarma": "images/shawarma.jpg",
+  "Cake": "images/cake.jpg",
+  "Donuts": "images/Donuts.jpg",
+  "Ice Cream": "images/ice_cream.jpg",
+  "juice": "images/juice.jpg",
+  "Milkshake": "images/milkshake.jpg"
+};
+
+document.getElementById("food-image").src =
+  foodImages[foodName] || "images/placeholder.png";
+
+/*********************************
+ FOOD DESCRIPTIONS
+**********************************/
+const foodDescriptions = {
+  "Jollof Rice": "Spicy West African rice served with delicious protein options.",
+  "Waakye": "Rice and beans served with traditional Ghanaian accompaniments.",
+  "Banku": "Fermented corn and cassava dough served with soup or stew.",
+  "Fufu with Light Soup": "Soft pounded fufu served with tasty light soup.",
+  "Pizza": "Cheesy pizza with customizable toppings.",
+  "Burger": "Juicy burger prepared with fresh ingredients.",
+  "Chicken Wings": "Crispy spicy wings grilled to perfection.",
+  "Shawarma": "Middle Eastern wrap filled with seasoned meat.",
+  "Cake": "Soft and moist cake perfect for celebrations.",
+  "Donuts": "Sweet fluffy donuts with delicious flavours.",
+  "Ice Cream": "Creamy ice cream available in scoops.",
+  "juice": "Refreshing fruit juice made from fresh fruits.",
+  "Milkshake": "Thick and creamy milkshake."
+};
+
+document.getElementById("food-description").textContent =
+  foodDescriptions[foodName] || "";
+
+/*********************************
+ FOOD OPTIONS
+**********************************/
+const foodOptions = {
+  "Jollof Rice": {
+    sizes: ["Small", "Medium", "Large"],
+    sides: ["None", "Fries", "Plantain", "Salad", "Chicken", "Fishie"],
+    drinks: ["None", "Coke", "Fanta", "Water", "Sobolo"]
+  },
+  "Waakye": {
+    sizes: ["Min", "Mid", "Jumbo"],
+    sides: ["None", "Salad", "Spaghetti", "Plantain", "Chicken", "Cassava Fish"],
+    drinks: ["None", "Coke", "Fanta", "Water"]
+  },
+  "Banku": {
+    sizes: ["1 Ball", "2 Balls", "3 Balls"],
+    sides: ["None", "Plantain", "Salad", "Fish"],
+    drinks: ["None", "Water", "Sobolo"]
+  },
+  "Fufu with Light Soup": {
+    sizes: ["1 Wrap", "2 Wraps"],
+    sides: ["None", "Extra Meat", "Extra Chicken"],
+    drinks: ["None", "Water"]
+  },
+  "Pizza": {
+    sizes: ["Small sz", "Medium sz", "Large sz"],
+    sides: ["None", "Extra Cheese", "Chicken on Pizza", "Extra Sausage"],
+    drinks: ["None", "Coke", "Fanta"]
+  },
+  "Burger": {
+    sizes: ["Single", "Double"],
+    sides: ["None", "Fries", "Extra Patty", "Cheese"],
+    drinks: ["None", "Coke", "Fanta"]
+  },
+  "Chicken Wings": {
+    sizes: ["6 pcs", "12 pcs"],
+    sides: ["None", "Fries", "Extra Sauce"],
+    drinks: ["None", "Coke", "Fanta"]
+  },
+  "Shawarma": {
+    sizes: ["Normal", "Meat"],
+    sides: ["None", "Fries", "Extra Sauce"],
+    drinks: ["None", "Coke", "Fanta"]
+  },
+  "Cake": {
+    sizes: ["Slice", "Half Cake", "Full Cake"],
+    sides: ["None", "Ice Cream", "Whipped Cream", "Extra Toppings"],
+    drinks: ["None", "Milkshake"]
+  },
+  "Donuts": {
+    sizes: ["Chocolate", "Vanilla", "Strawberry"],
+    sides: ["None", "Ice Cream", "Whipped Cream"],
+    drinks: ["None", "Milkshake"]
+  },
+  "Ice Cream": {
+    sizes: ["1 Scoop", "2 Scoops", "3 Scoops"],
+    sides: ["None", "Chocolate Syrup", "Sprinkles"],
+    drinks: ["None"]
+  },
+  "juice": {
+    sizes: ["Lemon", "Watermelon", "Strawberries", "Mango"],
+    sides: ["None"],
+    drinks: ["None"]
+  },
+  "Milkshake": {
+    sizes: ["Small one", "Medium one", "Large one"],
+    sides: ["None", "Extra Cream"],
+    drinks: ["None"]
+  }
+};
+
+/*********************************
+ POPULATE SELECT ELEMENTS
+**********************************/
+function populateSelect(id, items) {
+  const select = document.getElementById(id);
+  select.innerHTML = "";
+  items.forEach(item => {
+    const option = document.createElement("option");
+    option.value = normalize(item);
+    option.textContent = item;
+    select.appendChild(option);
+  });
+}
+
+const currentFood = foodOptions[foodName];
+
+if (!currentFood) {
+  console.error("No options found for:", foodName);
+} else {
+  populateSelect("size", currentFood.sizes);
+  populateSelect("sides", currentFood.sides);
+  populateSelect("drinks", currentFood.drinks);
+}
+
+/*********************************
+ IMAGE MAPS
+**********************************/
+const sizeImages = {
+  small: "images/jollof_small.png",
+  medium: "images/jollof.jpg",
+  large: "images/jollof_large.png",
+  min: "images/jollof_small.png",
+  mid: "images/jollof.jpg",
+  jumbo: "images/jollof_large.png",
+  "1_ball": "images/placeholder.png",
+  "2_balls": "images/placeholder.png",
+  "3_balls": "images/placeholder.png",
+  "1_wrap": "images/placeholder.png",
+  "2_wraps": "images/placeholder.png",
+  small_sz: "images/smallpizza.png",
+  medium_sz: "images/pizza.jpg",
+  large_sz: "images/jollof_large.png",
+  single: "images/single.png",
+  double: "images/double.png",
+  normal: "images/shawarma.jpg",
+  meat: "images/extrameat.png",
+  "6_pcs": "images/6_pcs.png",
+  "12_pcs": "images/12_pcs.png",
+  slice: "images/slice.png",
+  half_cake: "images/half.png",
+  full_cake: "images/cake.jpg",
+  chocolate: "images/dchoc.png",
+  vanilla: "images/dvan.png",
+  strawberry: "images/dstraw.png",
+  "1_scoop": "images/scoop1.png",
+  "2_scoops": "images/scoop2.png",
+  "3_scoops": "images/scoop3.png",
+  lemon: "images/lemon.png",
+  watermelon: "images/watermelon.png",
+  strawberries: "images/strawberry.png",
+  mango: "images/mango.png",
+  small_one: "images/smallmilk.png",
+  medium_one: "images/milkshake.jpg",
+  large_one: "images/bigmilk.png"
+};
+
+const sideImages = {
+  none: "images/placeholder.png",
+  fries: "images/fries.png",
+  plantain: "images/plantain.png",
+  salad: "images/salad.png",
+  spaghetti: "images/spaghetti.png",
+  fishie: "images/jolloffish.png",
+  fish: "images/bankufish.png",
+  chicken: "images/chicken.png",
+  extra_chicken: "images/fufuchicken.png",
+  extra_meat: "images/fufugoat.png",
+  meat: "images/extrameat.png",
+  extra_cheese: "images/cheesepizza.png",
+  extra_sausage: "images/peppizza.png",
+  extra_patty: "images/patty.png",
+  extra_sauce: "images/sauce.png",
+  chicken_on_pizza: "images/meatpizza.png",
+  ice_cream: "images/ice_cream.png",
+  whipped_cream: "images/whipped.png",
+  extra_toppings: "images/toppings.png",
+  chocolate_syrup: "images/syrup.png",
+  sprinkles: "images/springle.png",
+  extra_cream: "images/whipped.png"
+};
+
+const drinkImages = {
+  none: "images/placeholder.png",
+  coke: "images/coke.png",
+  fanta: "images/fanta.png",
+  water: "images/water.png",
+  sobolo: "images/sobolo.jpg",
+  milkshake: "images/milkshake.png"
+};
+
+/*********************************
+ PREVIEW CHANGE EVENTS
+**********************************/
+document.getElementById("size").addEventListener("change", e => {
+  document.getElementById("size-preview").src =
+    sizeImages[e.target.value] || "images/placeholder.png";
+});
+
+document.getElementById("sides").addEventListener("change", e => {
+  document.getElementById("side-preview").src =
+    sideImages[e.target.value] || "images/placeholder.png";
+});
+
+document.getElementById("drinks").addEventListener("change", e => {
+  document.getElementById("drink-preview").src =
+    drinkImages[e.target.value] || "images/placeholder.png";
+});
+
+function goToWhatsApp() {
+  window.location.href = "https://wa.me/233248854776";
+}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Menu - BIBI'S KITCHEN</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="header-container">
+            <img src="images/bibi's kitchen logo.png" alt="Bibi's Kitchen Logo" class="logo">
+        </div>
+    </header>
+
+
+<!-- Navigation -->
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="services.html">Booking</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+<div class="menu-section">
+<h2>Our Menu</h2>
+
+<!-- Local Dishes -->
+<div class="category">
+<h3>Local Dishes</h3>
+<div class="menu-cards">
+<div class="menu-card">
+<img src="images/Jollof.jpg" alt="Jollof Rice">
+<div class="menu-card-content">
+<h4>Jollof Rice</h4>
+<p>Spicy West African rice with vegetables.</p>
+<p class="price">GHC 25</p>
+<a href="food.html?food=Jollof Rice"><button class="order-btn">Order Now</button></a>
+</div>
+</div>
+
+<div class="menu-card">
+<img src="images/Wakye.jpg" alt="Waakye">
+<div class="menu-card-content">
+<h4>Waakye</h4>
+<p>Rice and beans with a variety of sides.</p>
+<p class="price">GHC 20</p>
+<a href="food.html?food=Waakye"><button class="order-btn">Order Now</button></a>
+</div>
+</div>
+
+<div class="menu-card">
+<img src="images/Banku.jpg" alt="Banku">
+<div class="menu-card-content">
+<h4>Banku</h4>
+<p>Fermented corn and cassava dough with soup or stew.</p>
+<p class="price">GHC 30</p>
+<a href="food.html?food=Banku"><button class="order-btn">Order Now</button></a>
+</div>
+</div>
+
+<div class="menu-card">
+<img src="images/fufu (2).jpg" alt="Fufu with Light Soup">
+<div class="menu-card-content">
+<h4>Fufu with Light Soup</h4>
+<p>Classic Ghanaian dish served with light soup.</p>
+<p class="price">GHC 35</p>
+<a href="food.html?food=Fufu with Light Soup"><button class="order-btn">Order Now</button></a>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Fast Foods -->
+<div class="category">
+<h3>Fast Foods</h3>
+<div class="menu-cards">
+<div class="menu-card">
+<img src="images/burger.jpg" alt="Burger">
+<div class="menu-card-content">
+<h4>Burger</h4>
+<p>Juicy beef burger with fresh vegetables.</p>
+<p class="price">GHC 20</p>
+<a href="food.html?food=Burger"><button class="order-btn">Order Now</button></a>
+</div>
+</div>
+
+<div class="menu-card">
+<img src="images/Shawarma.jpg" alt="Shawarma">
+<div class="menu-card-content">
+<h4>Shawarma</h4>
+<p>Grilled meat rolled in flatbread with sauces.</p>
+<p class="price">GHC 25</p>
+<a href="food.html?food=Shawarma"><button class="order-btn">Order Now</button></a>
+</div>
+</div>
+
+<div class="menu-card">
+<img src="images/pizza.jpg" alt="Pizza">
+<div class="menu-card-content">
+<h4>Pizza</h4>
+<p>Classic pizza with cheese and toppings.</p>
+<p class="price">GHC 35</p>
+<a href="food.html?food=Pizza"><button class="order-btn">Order Now</button></a>
+</div>
+</div>
+
+<div class="menu-card">
+<img src="images/wings.jpg" alt="Chicken Wings">
+<div class="menu-card-content">
+<h4>Chicken Wings</h4>
+<p>Spicy grilled chicken wings.</p>
+<p class="price">GHC 30</p>
+<a href="food.html?food=Chicken Wings"><button class="order-btn">Order Now</button></a>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Drinks & Beverages -->
+<div class="category">
+<h3>Drinks & Beverages</h3>
+<div class="menu-cards">
+<div class="menu-card">
+<img src="images/coconut juice.jpg" alt="Soft Drinks">
+<div class="menu-card-content">
+<h4>Soft Drinks</h4>
+<p>Refreshing carbonated beverages.</p>
+<p class="price">GHC 8</p>
+<a href="food.html?food=Soft Drinks"><button class="order-btn">Order Now</button></a>
+</div>
+</div>
+
+<div class="menu-card">
+<img src="images/juice.jpg" alt="Fresh Fruit Juice">
+<div class="menu-card-content">
+<h4>Fresh Fruit Juice</h4>
+<p>Made with seasonal fruits.</p>
+<p class="price">GHC 12</p>
+<a href="food.html?food=Fresh Fruit Juice"><button class="order-btn">Order Now</button></a>
+</div>
+</div>
+
+<div class="menu-card">
+<img src="images/milkshake.jpg" alt="Milkshake">
+<div class="menu-card-content">
+<h4>Milkshake</h4>
+<p>Creamy milkshake in different flavors.</p>
+<p class="price">GHC 15</p>
+<a href="food.html?food=Milkshake"><button class="order-btn">Order Now</button></a>
+</div>
+</div>
+
+<div class="menu-card">
+<img src="images/sobolo.jpg" alt="Sobolo">
+<div class="menu-card-content">
+<h4>Sobolo</h4>
+<p>Hibiscus drink served chilled.</p>
+<p class="price">GHC 10</p>
+<a href="food.html?food=Sobolo"><button class="order-btn">Order Now</button></a>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Desserts -->
+<div class="category">
+<h3>Desserts</h3>
+<div class="menu-cards">
+<div class="menu-card">
+<img src="images/ice cream.jpg" alt="Ice Cream">
+<div class="menu-card-content">
+<h4>Ice Cream</h4>
+<p>Cold and creamy ice cream in different flavors.</p>
+<p class="price">GHC 12</p>
+<a href="food.html?food=Ice Cream"><button class="order-btn">Order Now</button></a>
+</div>
+</div>
+
+<div class="menu-card">
+<img src="images/cake.jpg" alt="Cake">
+<div class="menu-card-content">
+<h4>Cake</h4>
+<p>Delicious baked cake slices.</p>
+<p class="price">GHC 15</p>
+<a href="food.html?food=Cake"><button class="order-btn">Order Now</button></a>
+</div>
+</div>
+
+<div class="menu-card">
+<img src="images/Donuts.jpg" alt="Doughnuts">
+<div class="menu-card-content">
+<h4>Doughnuts</h4>
+<p>Sweet doughnuts with toppings.</p>
+<p class="price">GHC 10</p>
+<a href="food.html?food=Doughnuts"><button class="order-btn">Order Now</button></a>
+</div>
+</div>
+
+<div class="menu-card">
+<img src="images/Fruits Salad.jpg" alt="Fruit Salad">
+<div class="menu-card-content">
+<h4>Fruit Salad</h4>
+<p>Fresh seasonal fruits mixed together.</p>
+<p class="price">GHC 12</p>
+<a href="food.html?food=Fruit Salad"><button class="order-btn">Order Now</button></a>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+<footer class="footer">
+        <p>© 2025 Bibi’s Kitchen | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order Food - Bibi's Kitchen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- HEADER -->
+    <header>
+        <div class="header-container">
+            <img src="images/bibi's kitchen logo.png" alt="Bibi's Kitchen Logo" class="logo">
+        </div>
+    </header>
+
+<h1>Order Delivery / Pre-Order</h1>
+
+<form class="form-box">
+    <label>Full Name:</label>
+    <input type="text" required>
+
+    <label>Phone:</label>
+    <input type="text" required>
+
+    <label>Select Dish:</label>
+    <select required>
+        <option>Jollof Rice</option>
+        <option>Grilled Chicken</option>
+        <option>Fried Rice</option>
+        <option>Pizza</option>
+        <option>Banku & Tilapia</option>
+    </select>
+
+    <label>Quantity:</label>
+    <input type="number" min="1" required>
+
+    <label>Delivery Address:</label>
+    <textarea rows="3" required></textarea>
+
+    <label>Order Time (Optional):</label>
+    <input type="time">
+
+    <button class="btn-primary">Place Order</button>
+</form>
+<footer class="footer">
+        <p>© 2025 Bibi’s Kitchen | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Reservation - Bibi's Kitchen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="header-container">
+            <img src="images/bibi's kitchen logo.png" alt="Bibi's Kitchen Logo" class="logo">
+        </div>
+    </header>
+
+
+<nav>
+    <img src="images/bibi's kitchen logo.png" alt="Bibi's Kitchen Logo" class="logo">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<h1>Reserve a Table</h1>
+
+<form class="form-box whatsapp-form">
+    <label>Full Name:</label>
+    <input type="text" name="Full Name" required>
+
+    <label>Phone Number:</label>
+    <input type="text" name="Phone Number" required>
+
+    <label>Reservation Date:</label>
+    <input type="date" name="Reservation Date" required>
+
+    <label>Number of Guests:</label>
+    <input type="number" name="Guests" min="1" required>
+
+    <label>Additional Notes:</label>
+    <textarea name="Additional Notes" rows="3"></textarea>
+
+       <a 
+  href="https://wa.me/233248854776?text=Hello i'm....!" 
+  target="_blank" 
+  class="btn-primary"
+>
+  Submit Catering Request
+</a>
+
+</form>
+
+<script src="java.js"></script>
+<footer class="footer">
+        <p>© 2025 Bibi’s Kitchen | All Rights Reserved</p>
+</footer>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bibi’s Kitchen - Services</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="nav_bar">
+        <!-- Logo Image -->
+        <div class="logo">
+        
+                <img src="images/bibi's kitchen logo.png" alt="Bibi's Kitchen Logo" class="logo-img">
+            </a>
+        </div>
+   <nav class="nav_board">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        </nav>
+    </header>
+
+    <!-- SERVICES HERO -->
+    <section class="page-hero">
+        <h1>Our Services</h1>
+        <p>We provide professional food services and booking solutions to make your dining experience perfect.</p>
+    </section>
+
+    <!-- SERVICES GRID -->
+    <section class="service-section">
+        <div class="service-card">
+            <h2> Table Reservation</h2>
+            <p>
+                Book a table online anytime. Choose your seat, dining time, and number 
+                of guests effortlessly through our reservation system.
+            </p>
+            <a href="reservation.html" class="btn-primary">Reserve Table</a>
+        </div>
+
+        <div class="service-card">
+            <h2> Event Catering</h2>
+            <p>
+                We offer catering for weddings, parties, corporate events, and special 
+                occasions. Custom menus and professional service guaranteed.
+            </p>
+            <a href="catering.html" class="btn-primary">Book Catering</a>
+        </div>
+
+        <div class="service-card">
+            <h2> Fast Delivery</h2>
+            <p>
+                Enjoy your meals anywhere. We deliver quickly, safely, and fresh right 
+                to your doorstep.
+            </p>
+            <a href="menu.html" class="btn-primary">Order Delivery</a>
+        </div>
+
+        <div class="service-card">
+            <h2>Meal Pre-Order</h2>
+            <p>
+                Order your meals ahead of time to avoid delays. Perfect for busy workers, 
+                students, and families.
+            </p>
+            <a href="menu.html" class="btn-primary">Pre-Order Now</a>
+        </div>
+
+        <div class="service-card">
+            <h2> Private Chef Service</h2>
+            <p>
+                Hire our professional chefs for private home dinners, family gatherings, 
+                or exclusive VIP experiences.
+            </p>
+            <a href="contact.html" class="btn-primary">Request Chef</a>
+        </div>
+
+        <div class="service-card">
+            <h2> Event Venue Booking</h2>
+            <p>
+                Book our event space for meetings, parties, and celebrations with full 
+                decoration and food packages.
+            </p>
+            <a href="venue.html" class="btn-primary">Book Venue</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 Bibi’s Kitchen | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
