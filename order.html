@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order Food - Bibi's Kitchen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- HEADER -->
+    <header>
+        <div class="header-container">
+            <img src="images/bibi's kitchen logo.png" alt="Bibi's Kitchen Logo" class="logo">
+        </div>
+    </header>
+
+<h1>Order Delivery / Pre-Order</h1>
+
+<form class="form-box">
+    <label>Full Name:</label>
+    <input type="text" required>
+
+    <label>Phone:</label>
+    <input type="text" required>
+
+    <label>Select Dish:</label>
+    <select required>
+        <option>Jollof Rice</option>
+        <option>Grilled Chicken</option>
+        <option>Fried Rice</option>
+        <option>Pizza</option>
+        <option>Banku & Tilapia</option>
+    </select>
+
+    <label>Quantity:</label>
+    <input type="number" min="1" required>
+
+    <label>Delivery Address:</label>
+    <textarea rows="3" required></textarea>
+
+    <label>Order Time (Optional):</label>
+    <input type="time">
+
+    <button class="btn-primary">Place Order</button>
+</form>
+<footer class="footer">
+        <p>© 2025 Bibi’s Kitchen | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Venue Booking - Bibi's Kitchen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="header-container">
+            <img src="images/bibi's kitchen logo.png" alt="Bibi's Kitchen Logo" class="logo">
+        </div>
+    </header>
+
+
+<!-- Navigation -->
+<nav>
+    <img src="images/bibi's kitchen logo.png" alt="Bibi's Kitchen Logo" class="logo-small">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<h1>Book Our Event Venue</h1>
+
+<form class="form-box whatsapp-form">
+    <label>Full Name:</label>
+    <input type="text" name="fullName" required>
+
+    <label>Phone Number:</label>
+    <input type="text" name="phone" required>
+
+    <label>Email:</label>
+    <input type="email" name="email" required>
+
+    <label>Event Type:</label>
+    <select name="eventType">
+        <option>Wedding</option>
+        <option>Birthday Party</option>
+        <option>Corporate Event</option>
+        <option>Private Event</option>
+    </select>
+
+    <label>Event Date:</label>
+    <input type="date" name="eventDate" required>
+
+    <label>Number of Guests:</label>
+    <input type="number" name="guests" min="10" required>
+
+    <label>Additional Notes:</label>
+    <textarea name="notes" rows="4"></textarea>
+
+       <a 
+  href="https://wa.me/233248854776?text=Hello i'm....." 
+  target="_blank" 
+  class="btn-primary"
+>
+  Submit Catering Request
+</a>
+
+</form>
+<footer class="footer">
+        <p>© 2025 Bibi’s Kitchen | All Rights Reserved</p>
+</footer>
+
+
+</body>
+</html>

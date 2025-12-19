@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Order | BIBI'S KITCHEN</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- HEADER -->
+    <header>
+        <div class="header-container">
+            <img src="images/bibi's kitchen logo.png" alt="Bibi's Kitchen Logo" class="logo">
+        </div>
+    </header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="food-wrapper">
+
+    <!-- LEFT IMAGE -->
+    <div class="food-image">
+        <img id="food-image" src="images/placeholder.png" alt="Food Image">
+    </div>
+
+    <!-- RIGHT DETAILS -->
+    <div class="food-details">
+        <h2 id="food-name">Food Name</h2>
+        <p id="food-description">Food description goes here.</p>
+
+        <!-- SIZE -->
+        <div class="option">
+            <label>Select Size</label>
+            <div class="option-row">
+                <select id="size"></select>
+                <img id="size-preview" class="option-preview" src="images/placeholder.png">
+            </div>
+        </div>
+
+        <!-- SIDES -->
+        <div class="option">
+            <label>Choose Side</label>
+            <div class="option-row">
+                <select id="sides"></select>
+                <img id="side-preview" class="option-preview" src="images/placeholder.png">
+            </div>
+        </div>
+
+        <!-- DRINK -->
+        <div class="option">
+            <label>Add Drink</label>
+            <div class="option-row">
+                <select id="drinks"></select>
+                <img id="drink-preview" class="option-preview" src="images/placeholder.png">
+            </div>
+        </div>
+
+        <!-- QUANTITY -->
+        <div class="option">
+            <label>Quantity</label>
+            <input type="number" id="quantity" value="1" min="1">
+        </div>
+
+        <button class="order-btn" onclick="goToWhatsApp()">
+  Order on WhatsApp
+</button>
+
+    </div>
+
+</div>
+
+<script src="java.js"></script>
+<footer class="footer">
+        <p>© 2025 Bibi’s Kitchen | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
